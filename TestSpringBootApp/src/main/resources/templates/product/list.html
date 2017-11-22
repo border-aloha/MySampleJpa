@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>商品一覧</title>
+</head>
+<body>
+<table>
+	<thead>
+		<th>productId</th>
+		<th>商品名</th>
+	</thead>
+	<tr th:each="product : ${productList}">
+		<td>${product.product_id}</td>
+		<td>${product.display_name}</td>
+	</tr>
+</table>
+</body>
+</html>
